@@ -1,5 +1,5 @@
 // src/app/layout.tsx
-import '/mnt/study_work/comp/portfolio/portfolio/src/app/globals.css'
+import 'src/app/globals.css'
 
 export const metadata = {
 	title: 'My Go & Next.js Portfolio',
