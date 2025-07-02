@@ -6,7 +6,10 @@ import (
 	"net/http"
 	"portfolio-backend/models"
 )
-
+type Response struct {
+	Message string `json:"message"`
+	Status  string `json:"status"`
+}
 // Handler is the entry point for the Vercel Serverless Function
 func Handler(w http.ResponseWriter, r *http.Request) {
 	// Set the Content-Type header to application/json
@@ -19,7 +22,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Create a response object
-	resp := models.Response{
+	resp := Response{
 		Message: "Hello from your Go Backend on Vercel!",
 		Status:  "success",
 	}
