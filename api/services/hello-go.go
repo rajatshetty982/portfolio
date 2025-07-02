@@ -4,13 +4,8 @@ package handler
 import (
 	"encoding/json"
 	"net/http"
+	"portfolio-backend/models"
 )
-
-// Response struct for JSON output
-type Response struct {
-	Message string `json:"message"`
-	Status  string `json:"status"`
-}
 
 // Handler is the entry point for the Vercel Serverless Function
 func Handler(w http.ResponseWriter, r *http.Request) {
@@ -24,8 +19,8 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Create a response object
-	resp := Response{
-		Message: "Hello from your Go Backend on Vercel! Go build something amazing!",
+	resp := models.Response{
+		Message: "Hello from your Go Backend on Vercel!",
 		Status:  "success",
 	}
 

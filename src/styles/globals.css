@@ -29,8 +29,8 @@ html, body {
   --muted: #8a8f98;
   --accent: #00d9ff;
   --accent-bg: #003344;
-  --glitch: #ff2c74;
-  --code: #1f2937;
+  --glitch: #0c3742;
+  --code: #000307;
   --border: #222;
 }
 
@@ -168,7 +168,7 @@ a::after {
   transition: opacity 0.3s ease;
 }
 a:hover::after {
-  opacity: 1;
+  opacity: 0.5;
 }
 
 /* 🛠️ Project List */
@@ -207,4 +207,21 @@ code {
   padding: 2rem 0;
   border-top: 1px solid var(--border);
   margin-top: auto;
+}
+/* for the buttons */
+.button-accent {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 0.2em;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 1.5em;
+  transition: background 0.2s;
+}
+.button-accent:hover {
+  background: var(--glitch);
 }

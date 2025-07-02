@@ -11,6 +11,7 @@ export default function Navbar() {
       <Link href="/projects">Projects</Link>
       <Link href="/blog">Blog</Link>
       <Link href="/contact">Contact</Link>
+      <Link href="/resume">Resume</Link>
       <button onClick={toggle} className="theme-toggle">
         {mode === 'dark' ? '☀️' : '🌙'}
       </button>
