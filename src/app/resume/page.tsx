@@ -2,7 +2,7 @@
 export default function Resume() {
   return (
     <> 
-    <a href="rajatResume.pdf" download>
+    <a href="thePdf.pdf" download>
         <button className="button-accent">Download the resume (PDF)</button>
       </a>
       <h2>Experience</h2>

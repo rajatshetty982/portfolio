@@ -1,5 +1,5 @@
 const projects = [
-  { title: 'Ascent SFTP Pipeline', tech: ['Go', 'PostgreSQL'], desc: 'Automated SFTP delivery system with hashing and deduplication.' },
+  { title: 'SFTP Pipeline', tech: ['Go', 'PostgreSQL'], desc: 'Automated SFTP delivery system with hashing and deduplication.' },
   { title: 'Chess Engine in C', tech: ['C', 'SDL2'], desc: 'WIP engine with focus on game loop and board rendering.' },
 ];
 
