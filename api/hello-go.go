@@ -4,12 +4,13 @@ package handler
 import (
 	"encoding/json"
 	"net/http"
-	"portfolio-backend/models"
 )
+
 type Response struct {
 	Message string `json:"message"`
 	Status  string `json:"status"`
 }
+
 // Handler is the entry point for the Vercel Serverless Function
 func Handler(w http.ResponseWriter, r *http.Request) {
 	// Set the Content-Type header to application/json
