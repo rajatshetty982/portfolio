@@ -1,8 +1,8 @@
 // src/app/resume/page.tsx
 export default function Resume() {
   return (
-    <> 
-    <a href="rajat-shetty's-resume.pdf" download>
+    <>
+      <a href="rajat-shetty's-resume.pdf" download>
         <button className="button-accent">Download the resume (PDF)</button>
       </a>
       <h2>Experience</h2>
@@ -20,7 +20,7 @@ export default function Resume() {
         <li>Basic Unix/Linux-like OS</li>
         <li>Communication interface between Raspberry Pi and a mock FR device(linux laptop) using MQTT</li>
       </ul>
-     
+
     </>
   );
 }

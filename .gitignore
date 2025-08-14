@@ -1,110 +1,15 @@
-# GitIgnore for Next.js, Go, and Vercel Projects
+node_modules
+dist/
 
-# =========================
-# Node.js / Next.js
-# =========================
-
-# Dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# Build artifacts
-/.next/
-/out/
-/dist/ # Common build output directory for various tools
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-lerna-debug.log*
-
-# Runtime data
 .npm
-.yarn-integrity
-*.tgz
-.DS_Store # macOS files
+.env/
 
-# Local environment variables
-# IMPORTANT: DO NOT commit these files. They contain sensitive API keys/secrets.
-.env.local
-.env.*.local
-.env
-
-# Next.js cache
-.next/cache/
-.next/standalone/ # If using standalone output
-
-# TypeScript build info
+.next/
 *.tsbuildinfo
-
-# ESLint cache
 .eslintcache
 
-# =========================
-# Go
-# =========================
+api/go.*
+vendor/
 
-# Compiled binaries and plugins
-# Go binaries are typically named after the main package or directory.
-# For your Vercel serverless function, Vercel handles compilation,
-# but if you build locally, these would be generated.
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-*.test      # Go test binaries
-*.out       # Go test output files (e.g., coverage profiles)
-
-# Go module cache and build cache (Go 1.11+)
-/go.sum
-/go.mod # Only if you didn't create it or want to ignore, but usually you want to track go.mod
-/vendor/    # Dependency directories (if you use 'go mod vendor')
-.cache/go-build/ # Go build cache
-
-# IDE specific files for Go (e.g., VS Code Go extension)
-.vscode/ # VS Code workspace settings and cache
-.vscode-test/ # Test workspace for VS Code extensions
-/.idea/ # IntelliJ/GoLand project files
-.gopls/ # Language server cache
-
-# =========================
-# Vercel
-# =========================
-
-# Vercel specific configuration and build artifacts
-.vercel/ # Contains Vercel CLI configuration and build metadata
-
-# =========================
-# Other common ignores
-# =========================
-
-# OS generated files
-.DS_Store
-.cache/
-.idea/ # IntelliJ IDEA / WebStorm / GoLand project files
-.vscode/ # VS Code related files
-*.sublime-project
-*.sublime-workspace
-.project
-.classpath
-.settings/
-
-# Thumbnails
-.thumbnails
-
-# Dotfiles (hidden files for tools, etc.)
-.byebug_history
-.rspec_history
-.sass-cache/
-.tern-port
-.vagrant/
-.c9/
-
-# Editor swap files
-*~
-*.swp
-.netrwhist
+.vscode/
+.vercel/
