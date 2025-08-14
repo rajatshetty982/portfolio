@@ -2,7 +2,7 @@
 export default function Resume() {
   return (
     <> 
-    <a href="thePdf.pdf" download>
+    <a href="rajat-shetty's-resume.pdf" download>
         <button className="button-accent">Download the resume (PDF)</button>
       </a>
       <h2>Experience</h2>

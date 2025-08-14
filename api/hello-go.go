@@ -24,7 +24,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 
 	// Create a response object
 	resp := Response{
-		Message: "Hello from your Go Backend on Vercel!",
+		Message: "Ola!",
 		Status:  "success",
 	}
 
